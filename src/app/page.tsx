@@ -30,20 +30,6 @@ export function Home() {
       {/* Main input area */}
       <div className="relative z-10 flex min-h-screen items-center justify-center px-4 py-8">
         <div className="w-full max-w-2xl">
-          {/* Recommended prompts on top with horizontal scroll */}
-          <div className="mb-3 rounded-xl p-2 backdrop-blur-sm">
-            <div className="flex gap-1.5">
-              {recommendedPrompts.map((rec, index) => (
-                <div
-                  key={index}
-                  className="whitespace-nowrap rounded-full border border-dashed border-purple-200 bg-purple-50 px-2.5 py-1 text-[10px] text-gray-600"
-                >
-                  {rec}
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div className="relative group">
             <textarea
               value={prompt}
